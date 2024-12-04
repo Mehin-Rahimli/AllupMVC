@@ -3,24 +3,80 @@
   "WorkspaceRootPath": "C:\\Users\\User\\OneDrive\\Desktop\\Documents\\Thirdproject\\AllupMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|c:\\users\\user\\onedrive\\desktop\\documents\\thirdproject\\allupmvc\\allupmvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|solutionrelative:allupmvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|c:\\users\\user\\onedrive\\desktop\\documents\\thirdproject\\allupmvc\\allupmvc\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|solutionrelative:allupmvc\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|c:\\users\\user\\onedrive\\desktop\\documents\\thirdproject\\allupmvc\\allupmvc\\viewmodels\\detailvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|solutionrelative:allupmvc\\viewmodels\\detailvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|c:\\users\\user\\onedrive\\desktop\\documents\\thirdproject\\allupmvc\\allupmvc\\areas\\admin\\viewmodels\\products\\updateproductvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|solutionrelative:allupmvc\\areas\\admin\\viewmodels\\products\\updateproductvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|c:\\users\\user\\onedrive\\desktop\\documents\\thirdproject\\allupmvc\\allupmvc\\areas\\admin\\viewmodels\\products\\getproductvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|solutionrelative:allupmvc\\areas\\admin\\viewmodels\\products\\getproductvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|c:\\users\\user\\onedrive\\desktop\\documents\\thirdproject\\allupmvc\\allupmvc\\areas\\admin\\viewmodels\\products\\createproductvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|solutionrelative:allupmvc\\areas\\admin\\viewmodels\\products\\createproductvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|c:\\users\\user\\onedrive\\desktop\\documents\\thirdproject\\allupmvc\\allupmvc\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|solutionrelative:allupmvc\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|c:\\users\\user\\onedrive\\desktop\\documents\\thirdproject\\allupmvc\\allupmvc\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|solutionrelative:allupmvc\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|c:\\users\\user\\onedrive\\desktop\\documents\\thirdproject\\allupmvc\\allupmvc\\areas\\admin\\viewmodels\\categories\\updatecategoryvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|solutionrelative:allupmvc\\areas\\admin\\viewmodels\\categories\\updatecategoryvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|c:\\users\\user\\onedrive\\desktop\\documents\\thirdproject\\allupmvc\\allupmvc\\areas\\admin\\viewmodels\\categories\\getcategoryvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|solutionrelative:allupmvc\\areas\\admin\\viewmodels\\categories\\getcategoryvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|c:\\users\\user\\onedrive\\desktop\\documents\\thirdproject\\allupmvc\\allupmvc\\areas\\admin\\viewmodels\\categories\\createcategoryvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|solutionrelative:allupmvc\\areas\\admin\\viewmodels\\categories\\createcategoryvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|c:\\users\\user\\onedrive\\desktop\\documents\\thirdproject\\allupmvc\\allupmvc\\dal\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|solutionrelative:allupmvc\\dal\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|c:\\users\\user\\onedrive\\desktop\\documents\\thirdproject\\allupmvc\\allupmvc\\controllers\\shopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|solutionrelative:allupmvc\\controllers\\shopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|c:\\users\\user\\onedrive\\desktop\\documents\\thirdproject\\allupmvc\\allupmvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|solutionrelative:allupmvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|c:\\users\\user\\onedrive\\desktop\\documents\\thirdproject\\allupmvc\\allupmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|solutionrelative:allupmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|c:\\users\\user\\onedrive\\desktop\\documents\\thirdproject\\allupmvc\\allupmvc\\viewmodels\\homevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|solutionrelative:allupmvc\\viewmodels\\homevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|c:\\users\\user\\onedrive\\desktop\\documents\\thirdproject\\allupmvc\\allupmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|solutionrelative:allupmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|c:\\users\\user\\onedrive\\desktop\\documents\\thirdproject\\allupmvc\\allupmvc\\viewmodels\\homevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|solutionrelative:allupmvc\\viewmodels\\homevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|c:\\users\\user\\onedrive\\desktop\\documents\\thirdproject\\allupmvc\\allupmvc\\views\\shop\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|solutionrelative:allupmvc\\views\\shop\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|c:\\users\\user\\onedrive\\desktop\\documents\\thirdproject\\allupmvc\\allupmvc\\views\\shop\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|solutionrelative:allupmvc\\views\\shop\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|c:\\users\\user\\onedrive\\desktop\\documents\\thirdproject\\allupmvc\\allupmvc\\viewmodels\\detailvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|solutionrelative:allupmvc\\viewmodels\\detailvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|c:\\users\\user\\onedrive\\desktop\\documents\\thirdproject\\allupmvc\\allupmvc\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|solutionrelative:allupmvc\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|c:\\users\\user\\onedrive\\desktop\\documents\\thirdproject\\allupmvc\\allupmvc\\models\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,20 +87,8 @@
       "RelativeMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|solutionrelative:allupmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|c:\\users\\user\\onedrive\\desktop\\documents\\thirdproject\\allupmvc\\allupmvc\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|solutionrelative:allupmvc\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|c:\\users\\user\\onedrive\\desktop\\documents\\thirdproject\\allupmvc\\allupmvc\\dal\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|solutionrelative:allupmvc\\dal\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|c:\\users\\user\\onedrive\\desktop\\documents\\thirdproject\\allupmvc\\allupmvc\\models\\slide.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|solutionrelative:allupmvc\\models\\slide.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|c:\\users\\user\\onedrive\\desktop\\documents\\thirdproject\\allupmvc\\allupmvc\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{06D3C984-5062-4CA5-A563-3D2500F380A5}|AllupMVC\\AllupMVC.csproj|solutionrelative:allupmvc\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,11 +98,158 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Documents\\Thirdproject\\AllupMVC\\AllupMVC\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "AllupMVC\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Documents\\Thirdproject\\AllupMVC\\AllupMVC\\Models\\Category.cs",
+              "RelativeToolTip": "AllupMVC\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T15:23:15.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UpdateCategoryVM.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Documents\\Thirdproject\\AllupMVC\\AllupMVC\\Areas\\Admin\\ViewModels\\Categories\\UpdateCategoryVM.cs",
+              "RelativeDocumentMoniker": "AllupMVC\\Areas\\Admin\\ViewModels\\Categories\\UpdateCategoryVM.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Documents\\Thirdproject\\AllupMVC\\AllupMVC\\Areas\\Admin\\ViewModels\\Categories\\UpdateCategoryVM.cs",
+              "RelativeToolTip": "AllupMVC\\Areas\\Admin\\ViewModels\\Categories\\UpdateCategoryVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T15:08:01.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GetCategoryVM.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Documents\\Thirdproject\\AllupMVC\\AllupMVC\\Areas\\Admin\\ViewModels\\Categories\\GetCategoryVM.cs",
+              "RelativeDocumentMoniker": "AllupMVC\\Areas\\Admin\\ViewModels\\Categories\\GetCategoryVM.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Documents\\Thirdproject\\AllupMVC\\AllupMVC\\Areas\\Admin\\ViewModels\\Categories\\GetCategoryVM.cs",
+              "RelativeToolTip": "AllupMVC\\Areas\\Admin\\ViewModels\\Categories\\GetCategoryVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T15:07:47.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CreateCategoryVM.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Documents\\Thirdproject\\AllupMVC\\AllupMVC\\Areas\\Admin\\ViewModels\\Categories\\CreateCategoryVM.cs",
+              "RelativeDocumentMoniker": "AllupMVC\\Areas\\Admin\\ViewModels\\Categories\\CreateCategoryVM.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Documents\\Thirdproject\\AllupMVC\\AllupMVC\\Areas\\Admin\\ViewModels\\Categories\\CreateCategoryVM.cs",
+              "RelativeToolTip": "AllupMVC\\Areas\\Admin\\ViewModels\\Categories\\CreateCategoryVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T15:07:32.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Documents\\Thirdproject\\AllupMVC\\AllupMVC\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "AllupMVC\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Documents\\Thirdproject\\AllupMVC\\AllupMVC\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "AllupMVC\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T14:55:43.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UpdateProductVM.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Documents\\Thirdproject\\AllupMVC\\AllupMVC\\Areas\\Admin\\ViewModels\\Products\\UpdateProductVM.cs",
+              "RelativeDocumentMoniker": "AllupMVC\\Areas\\Admin\\ViewModels\\Products\\UpdateProductVM.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Documents\\Thirdproject\\AllupMVC\\AllupMVC\\Areas\\Admin\\ViewModels\\Products\\UpdateProductVM.cs",
+              "RelativeToolTip": "AllupMVC\\Areas\\Admin\\ViewModels\\Products\\UpdateProductVM.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T14:31:47.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GetProductVM.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Documents\\Thirdproject\\AllupMVC\\AllupMVC\\Areas\\Admin\\ViewModels\\Products\\GetProductVM.cs",
+              "RelativeDocumentMoniker": "AllupMVC\\Areas\\Admin\\ViewModels\\Products\\GetProductVM.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Documents\\Thirdproject\\AllupMVC\\AllupMVC\\Areas\\Admin\\ViewModels\\Products\\GetProductVM.cs",
+              "RelativeToolTip": "AllupMVC\\Areas\\Admin\\ViewModels\\Products\\GetProductVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T14:31:30.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "CreateProductVM.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Documents\\Thirdproject\\AllupMVC\\AllupMVC\\Areas\\Admin\\ViewModels\\Products\\CreateProductVM.cs",
+              "RelativeDocumentMoniker": "AllupMVC\\Areas\\Admin\\ViewModels\\Products\\CreateProductVM.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Documents\\Thirdproject\\AllupMVC\\AllupMVC\\Areas\\Admin\\ViewModels\\Products\\CreateProductVM.cs",
+              "RelativeToolTip": "AllupMVC\\Areas\\Admin\\ViewModels\\Products\\CreateProductVM.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T14:31:14.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ShopController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Documents\\Thirdproject\\AllupMVC\\AllupMVC\\Controllers\\ShopController.cs",
+              "RelativeDocumentMoniker": "AllupMVC\\Controllers\\ShopController.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Documents\\Thirdproject\\AllupMVC\\AllupMVC\\Controllers\\ShopController.cs",
+              "RelativeToolTip": "AllupMVC\\Controllers\\ShopController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwB0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T14:22:55.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Documents\\Thirdproject\\AllupMVC\\AllupMVC\\Views\\Shop\\Index.cshtml",
+              "RelativeDocumentMoniker": "AllupMVC\\Views\\Shop\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Documents\\Thirdproject\\AllupMVC\\AllupMVC\\Views\\Shop\\Index.cshtml",
+              "RelativeToolTip": "AllupMVC\\Views\\Shop\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-04T13:55:19.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Documents\\Thirdproject\\AllupMVC\\AllupMVC\\Views\\Shop\\Detail.cshtml",
+              "RelativeDocumentMoniker": "AllupMVC\\Views\\Shop\\Detail.cshtml",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Documents\\Thirdproject\\AllupMVC\\AllupMVC\\Views\\Shop\\Detail.cshtml",
+              "RelativeToolTip": "AllupMVC\\Views\\Shop\\Detail.cshtml",
+              "ViewState": "AgIAAPgBAAAAAAAAAAAAALcBAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-04T13:38:08.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Documents\\Thirdproject\\AllupMVC\\AllupMVC\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "AllupMVC\\Views\\Shared\\_Layout.cshtml",
@@ -70,12 +261,8 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Documents\\Thirdproject\\AllupMVC\\AllupMVC\\Models\\Product.cs",
               "RelativeDocumentMoniker": "AllupMVC\\Models\\Product.cs",
@@ -83,11 +270,12 @@
               "RelativeToolTip": "AllupMVC\\Models\\Product.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T14:35:03.194Z"
+              "WhenOpened": "2024-12-02T14:35:03.194Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 21,
               "Title": "Slide.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Documents\\Thirdproject\\AllupMVC\\AllupMVC\\Models\\Slide.cs",
               "RelativeDocumentMoniker": "AllupMVC\\Models\\Slide.cs",
@@ -99,7 +287,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 19,
               "Title": "ProductImage.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Documents\\Thirdproject\\AllupMVC\\AllupMVC\\Models\\ProductImage.cs",
               "RelativeDocumentMoniker": "AllupMVC\\Models\\ProductImage.cs",
@@ -107,12 +295,11 @@
               "RelativeToolTip": "AllupMVC\\Models\\ProductImage.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T14:33:59.363Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-02T14:33:59.363Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Documents\\Thirdproject\\AllupMVC\\AllupMVC\\DAL\\AppDbContext.cs",
               "RelativeDocumentMoniker": "AllupMVC\\DAL\\AppDbContext.cs",
@@ -120,11 +307,12 @@
               "RelativeToolTip": "AllupMVC\\DAL\\AppDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T14:33:55.837Z"
+              "WhenOpened": "2024-12-02T14:33:55.837Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 20,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Documents\\Thirdproject\\AllupMVC\\AllupMVC\\Program.cs",
               "RelativeDocumentMoniker": "AllupMVC\\Program.cs",
@@ -132,12 +320,11 @@
               "RelativeToolTip": "AllupMVC\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T13:40:45.951Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-02T13:40:45.951Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 17,
               "Title": "DetailVM.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Documents\\Thirdproject\\AllupMVC\\AllupMVC\\ViewModels\\DetailVM.cs",
               "RelativeDocumentMoniker": "AllupMVC\\ViewModels\\DetailVM.cs",
@@ -150,7 +337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
               "Title": "HomeVM.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Documents\\Thirdproject\\AllupMVC\\AllupMVC\\ViewModels\\HomeVM.cs",
               "RelativeDocumentMoniker": "AllupMVC\\ViewModels\\HomeVM.cs",
@@ -163,33 +350,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 11,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Documents\\Thirdproject\\AllupMVC\\AllupMVC\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "AllupMVC\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Documents\\Thirdproject\\AllupMVC\\AllupMVC\\Controllers\\HomeController.cs",
               "RelativeToolTip": "AllupMVC\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwB0AAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBYAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-29T15:58:33.687Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Documents\\Thirdproject\\AllupMVC\\AllupMVC\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "AllupMVC\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Documents\\Thirdproject\\AllupMVC\\AllupMVC\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "AllupMVC\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAACkBAAAAAAAAAAAAAHERAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB0PAAAAAAAAAADwv0EQAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-29T15:46:59.345Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Documents\\Thirdproject\\AllupMVC\\AllupMVC\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "AllupMVC\\Views\\_ViewImports.cshtml",
@@ -197,7 +384,8 @@
               "RelativeToolTip": "AllupMVC\\Views\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-29T15:41:55.285Z"
+              "WhenOpened": "2024-11-29T15:41:55.285Z",
+              "EditorCaption": ""
             }
           ]
         }

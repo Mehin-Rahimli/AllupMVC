@@ -19,6 +19,8 @@
   <ItemGroup>
     <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\Admin\ViewModels\Brands\" />
+    <Folder Include="Areas\Admin\ViewModels\Slides\" />
     <Folder Include="Areas\Admin\Views\Category\" />
     <Folder Include="Areas\Admin\Views\Slide\" />
   </ItemGroup>

@@ -27,6 +27,7 @@ namespace AllupMVC.Controllers
             .Include(p => p.ProductImages
             .OrderByDescending(pi => pi.IsPrimary))
             .Include(p=>p.Category)
+            .Include(p=>p.Brand)
             .FirstOrDefaultAsync(p=>p.Id==id);
 
 
