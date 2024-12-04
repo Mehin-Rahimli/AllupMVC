@@ -26,7 +26,7 @@ namespace AllupMVC.Controllers
 
                 Products = await _context.Products
                 .Take(5)
-                .Include(p => p.ProductImages.Where(pi => pi.IsPrimary != null))
+                .Include(p => p.ProductImages)
                 .ToListAsync()
             };
 
