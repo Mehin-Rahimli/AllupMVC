@@ -1,10 +1,32 @@
 ﻿using AllupMVC.Utilities.Enums;
 using Microsoft.AspNetCore.Http;
+using System.Text.RegularExpressions;
 
 namespace AllupMVC.Utilities.Extensions
 {
     public static class FileValidator
     {
+        public static string CheckName(this string name)
+        {
+            if (name.Any(char.IsDigit))
+            {
+                return null;
+            }
+            name = name.Trim();
+            return char.ToUpper(name[0]) + name.Substring(1).ToLower(); ;
+        }
+
+        public static bool CheckEmail(this string email)
+        {
+            Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
+            Match match = regex.Match(email);
+            if (match.Success)
+            {
+                return true;
+            }
+            return false;
+
+        }
         public static string FilePath(this string fileName,params string[]roots)
         {
             string path=string.Empty;
@@ -29,9 +51,9 @@ namespace AllupMVC.Utilities.Extensions
         {
           switch(filesize)
             {
-                case FileSize.MB:
-                    return file.Length <= size * 1024;
                 case FileSize.KB:
+                    return file.Length <= size * 1024;
+                case FileSize.MB:
                     return file.Length <= size * 1024 * 1024;
                 case FileSize.GB:
                     return file.Length <= size * 1024 * 1024 * 1024;
