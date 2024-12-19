@@ -18,6 +18,8 @@ namespace AllupMVC.Areas.Admin.ViewModels
 
         [Required]
         public int? CategoryId { get; set; }
+
+        [Required]
         public int? BrandId { get; set; }
 
 

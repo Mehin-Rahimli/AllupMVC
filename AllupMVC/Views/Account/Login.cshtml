@@ -8,21 +8,34 @@
             <div class="col-lg-6">
                 <div class="login-register-wrapper mt-30">
                     <h4 class="allup-title">Login to Your Account</h4>
-                    <form action="#">
+                    <form action="#" method="post">
+                        <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+                       
+                            
+                            <div class="single-form">
+                            <label asp-for="UserNameOrEmail">Username</label>
+                                <input asp-for="UserNameOrEmail" type="text" placeholder="Username or Email">
+                                <span class="text-danger" asp-validation-for="UserNameOrEmail"></span>
+                        </div>
+                      
+                        
                         <div class="single-form">
-                            <input type="text" placeholder="Username or email *">
+                                <label asp-for="Password">Password</label>
+                                <input asp-for="Password" type="text" placeholder="Password">
+                                <span class="text-danger" asp-validation-for="Password"></span>
+                           
                         </div>
-                        <div class="single-form">
-                            <input type="password" placeholder="Password">
+                        
+                        <div class="col-md-12  d-flex">
+                            <input asp-for="IsPersistent"  >
+                            <label asp-for="IsPersistent" >Remember me</label>
+                           
                         </div>
-                        <div class="custom-checkbox mt-30">
-                            <input type="checkbox" id="account">
-                            <label for="account"></label>
-                            <p>Remember me</p>
-                        </div>
+                       
                         <div class="single-form">
                             <button class="main-btn main-btn-2">Login</button>
-                        </div>
+                            </div>
+                        
                     </form>
                     <p class="mt-20"><a href="#">Lost your password?</a></p>
                     <p class="mt-10">No account? <a href="register.html">Create one here.</a></p>

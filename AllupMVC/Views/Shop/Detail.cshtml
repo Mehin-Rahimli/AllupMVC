@@ -27,18 +27,18 @@
                        @foreach(ProductImage productImage in Model.Product.ProductImages)
                         {
                             <div class="single-image">
-                                <img src="~/assets/images/product-quick/@productImage.Image" alt="">
+                                <img src="~/assets/images/@productImage.Image" alt="">
                             </div>
                         }
 
                     </div>
                     <div class="product-single-thumb-image">
                         <ul class="product-single-thumb">
-                            <li><img src="~/assets/images/product-quick/product-1.jpg" alt="product"></li>
-                            <li><img src="~/assets/images/product-quick/product-2.jpg" alt="product"></li>
-                            <li><img src="~/assets/images/product-quick/product-3.jpg" alt="product"></li>
-                            <li><img src="~/assets/images/product-quick/product-4.jpg" alt="product"></li>
-                            <li><img src="~/assets/images/product-quick/product-5.jpg" alt="product"></li>
+                           @foreach (ProductImage image in Model.Product.ProductImages)
+                            {
+                                <li><img src="~/assets/images/@image.Image" alt="product"></li>
+                              
+                            }
                         </ul>
                     </div>
                 </div> <!-- single product image -->
@@ -52,7 +52,7 @@
                             <li><a href="#">camera</a></li>
                         </ul>
                     </div>
-                    <h2 class="product-title">New Balance Fresh Foam LAZR v1 Sport eu accumsan massa facilisis</h2>
+                    <h2 class="product-title">@Model.Product.Name</h2>
                     <div class="review-rating d-flex flex-wrap">
                         <ul class="rating">
                             <li class="rating-on"><i class="fas fa-star"></i></li>
@@ -68,7 +68,7 @@
                     </div>
                     <div class="product-price">
                         <span class="price-sale">€21.90</span>
-                        <span class="regular-price">€25.90</span>
+                        <span class="regular-price">€@Model.Product.Price</span>
                     </div>
                     <div class="product-basic-info">
                         <div class="single-info">
@@ -77,7 +77,7 @@
                         </div>
                         <div class="single-info">
                             <span class="title">Brand :</span>
-                            <span class="value"><a href="#">Brac</a></span>
+                            <span class="value"><a href="#">@Model.Product.Brand</a></span>
                         </div>
                         <div class="single-info">
                             <span class="title"> Product Code :</span>
@@ -327,102 +327,7 @@
                 </div>
             </div>
         </div> <!-- row -->
-        <div class="product-items">
-            <div class="row product-active">
-                <div class="col-lg-2">
-                    <div class="single-product mt-30">
-                        <div class="product-image">
-                            <a href="single-product.html">
-                                <img class="first-image" src="~/assets/images/product/product-1.jpg" alt="product">
-                                <img class="second-image" src="~/assets/images/product/product-2.jpg" alt="product">
-                            </a>
-                            <ul class="product-meta">
-                                <li><a href="#"><i class="icon ion-bag"></i></a></li>
-                                <li><a href="#"><i class="icon ion-android-favorite-outline"></i></a></li>
-                                <li><a href="#"><i class="icon ion-android-options"></i></a></li>
-                                <li><a data-toggle="modal" data-target="#productQuickModal" href="#"><i class="icon ion-android-open"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="product-content">
-                            <ul class="product-rating">
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                            </ul>
-                            <h4 class="product-title"><a href="single-product.html">Cale 6 eu accumsan massa facilisis Madden by Steve</a></h4>
-                            <div class="product-price">
-                                <span class="price-sale">€11.90</span>
-                            </div>
-                        </div>
-                    </div> <!-- single product -->
-                </div>
-                <div class="col-lg-2">
-                    <div class="single-product mt-30">
-                        <div class="product-image">
-                            <a href="single-product.html">
-                                <img class="first-image" src="~/assets/images/product/product-3.jpg" alt="product">
-                                <img class="second-image" src="~/assets/images/product/product-4.jpg" alt="product">
-                            </a>
-                            <ul class="product-meta">
-                                <li><a href="#"><i class="icon ion-bag"></i></a></li>
-                                <li><a href="#"><i class="icon ion-android-favorite-outline"></i></a></li>
-                                <li><a href="#"><i class="icon ion-android-options"></i></a></li>
-                                <li><a data-toggle="modal" data-target="#productQuickModal" href="#"><i class="icon ion-android-open"></i></a></li>
-                            </ul>
-                            <span class="discount-product">-12%</span>
-                        </div>
-                        <div class="product-content">
-                            <ul class="product-rating">
-                                <li class="rating-on"><i class="fas fa-star"></i></li>
-                                <li class="rating-on"><i class="fas fa-star"></i></li>
-                                <li class="rating-on"><i class="fas fa-star"></i></li>
-                                <li class="rating-on"><i class="fas fa-star"></i></li>
-                                <li class="rating-on"><i class="fas fa-star"></i></li>
-                            </ul>
-                            <h4 class="product-title"><a href="single-product.html">Originals Kaval Wind breaker Winter Jacket eu...</a></h4>
-                            <div class="product-price">
-                                <span class="regular-price ">€23.90</span>
-                                <span class="price-sale">€21.90</span>
-                            </div>
-                        </div>
-                    </div> <!-- single product -->
-                </div>
-              @foreach (ProductImage image in Model.Product.ProductImages)
-                {
-                    <div class="col-lg-2">
-                        <div class="single-product mt-30">
-                            <div class="product-image">
-                                <a href="single-product.html">
-                                    <img class="first-image" src="~/assets/images/product/@image.Image" alt="product">
-                                </a>
-                                <ul class="product-meta">
-                                    <li><a href="#"><i class="icon ion-bag"></i></a></li>
-                                    <li><a href="#"><i class="icon ion-android-favorite-outline"></i></a></li>
-                                    <li><a href="#"><i class="icon ion-android-options"></i></a></li>
-                                    <li><a data-toggle="modal" data-target="#productQuickModal" href="#"><i class="icon ion-android-open"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="product-content">
-                                <ul class="product-rating">
-                                    <li class="rating-on"><i class="fas fa-star"></i></li>
-                                    <li class="rating-on"><i class="fas fa-star"></i></li>
-                                    <li class="rating-on"><i class="fas fa-star"></i></li>
-                                    <li class="rating-on"><i class="fas fa-star"></i></li>
-                                    <li class="rating-on"><i class="fas fa-star"></i></li>
-                                </ul>
-                                <h4 class="product-title"><a href="single-product.html">Madden by Steve Madden Cale 6 eu accumsan massa...</a></h4>
-                                <div class="product-price">
-                                    <span class="price-sale">€@image.Product.Price</span>
-                                </div>
-                            </div>
-                        </div> <!-- single product -->
-                    </div>
-                }
-               
-            </div> <!-- row -->
-        </div> <!-- product items -->
+        @Html.Partial("ProductPartialView",Model.RelatedProducts); <!-- product items -->
     </div>
 </section>
 
@@ -432,19 +337,66 @@
 <div class="brand-area pt-80">
     <div class="container-fluid custom-container">
         <div class="row brand-active">
-           @foreach (ProductImage productImage2 in Model.Product.ProductImages)
-            {
-                <div class="col-lg-2">
-                    <div class="single-brand">
-                        <a href="#">
-                            <img src="~/assets/images/brand/@productImage2.Product.Brand" alt="brand">
-                        </a>
-                    </div> <!-- single brand -->
+            <div class="col-lg-2">
+                <div class="single-brand">
+                    <a href="#">
+                        <img src="~/assets/images/brand/brand-1.jpg" alt="brand" />
+                    </a>
                 </div>
-            }
-           
-        </div> <!-- row -->
-    </div> <!-- container -->
+                <!-- single brand -->
+            </div>
+            <div class="col-lg-2">
+                <div class="single-brand">
+                    <a href="#">
+                        <img src="~/assets/images/brand/brand-2.jpg" alt="brand" />
+                    </a>
+                </div>
+                <!-- single brand -->
+            </div>
+            <div class="col-lg-2">
+                <div class="single-brand">
+                    <a href="#">
+                        <img src="~/assets/images/brand/brand-3.jpg" alt="brand" />
+                    </a>
+                </div>
+                <!-- single brand -->
+            </div>
+            <div class="col-lg-2">
+                <div class="single-brand">
+                    <a href="#">
+                        <img src="~/assets/images/brand/brand-4.jpg" alt="brand" />
+                    </a>
+                </div>
+                <!-- single brand -->
+            </div>
+            <div class="col-lg-2">
+                <div class="single-brand">
+                    <a href="#">
+                        <img src="~/assets/images/brand/brand-5.jpg" alt="brand" />
+                    </a>
+                </div>
+                <!-- single brand -->
+            </div>
+            <div class="col-lg-2">
+                <div class="single-brand">
+                    <a href="#">
+                        <img src="~/assets/images/brand/brand-6.jpg" alt="brand" />
+                    </a>
+                </div>
+                <!-- single brand -->
+            </div>
+            <div class="col-lg-2">
+                <div class="single-brand">
+                    <a href="#">
+                        <img src="~/assets/images/brand/brand-4.jpg" alt="brand" />
+                    </a>
+                </div>
+                <!-- single brand -->
+            </div>
+        </div>
+        <!-- row -->
+    </div>
+    <!-- container -->
 </div>
 
 <!--====== Brand Part Ends ======-->

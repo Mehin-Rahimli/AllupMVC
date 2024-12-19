@@ -41,6 +41,7 @@ namespace AllupMVC.Areas.Admin.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(CreateCategoryVM categoryVM)
         {
             if(!ModelState.IsValid)
@@ -86,6 +87,7 @@ namespace AllupMVC.Areas.Admin.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Update(int? id, UpdateCategoryVM categoryVM)
         {
             if (id == null || id < 1) return BadRequest();

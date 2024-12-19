@@ -99,7 +99,7 @@ namespace AllupMVC.Areas.Admin.Controllers
                 ModelState.AddModelError(nameof(CreateProductVM.CategoryId), "Category doesn't exist");
                 return View(productVM);
             }
-            bool result2 = productVM.Brands.Any(c => c.Id == productVM.BrandId);
+            bool result2 = productVM.Brands.Any(b => b.Id == productVM.BrandId);
             if (!result2)
             {
                 ModelState.AddModelError(nameof(CreateProductVM.BrandId), "Brand doesn't exist");
@@ -109,7 +109,7 @@ namespace AllupMVC.Areas.Admin.Controllers
 
             ProductImage main = new()
             {
-                Image = await productVM.MainPhoto.CreateFileAsync(_env.WebRootPath, "assets", "images", "website-images"),
+                Image = await productVM.MainPhoto.CreateFileAsync(_env.WebRootPath, "assets", "images"),
                 IsPrimary = true,
                 CreatedAt = DateTime.Now,
                 IsDeleted = false
@@ -119,7 +119,7 @@ namespace AllupMVC.Areas.Admin.Controllers
 
             ProductImage hover = new()
             {
-                Image = await productVM.HoverPhoto.CreateFileAsync(_env.WebRootPath, "assets", "images", "website-images"),
+                Image = await productVM.HoverPhoto.CreateFileAsync(_env.WebRootPath, "assets", "images"),
                 IsPrimary = false,
                 CreatedAt = DateTime.Now,
                 IsDeleted = false
@@ -162,7 +162,7 @@ namespace AllupMVC.Areas.Admin.Controllers
 
                     product.ProductImages.Add(new ProductImage
                     {
-                        Image = await file.CreateFileAsync(_env.WebRootPath, "assets", "images", "website-images"),
+                        Image = await file.CreateFileAsync(_env.WebRootPath, "assets", "images"),
                         CreatedAt = DateTime.Now,
                         IsDeleted = false,
                         IsPrimary = null
@@ -181,7 +181,7 @@ namespace AllupMVC.Areas.Admin.Controllers
         }
 
 
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public async Task<IActionResult> Update(int? id)
         {
             if (id == null || id < 1) return BadRequest();
@@ -272,7 +272,7 @@ namespace AllupMVC.Areas.Admin.Controllers
             }
             if (existed.BrandId != productVM.BrandId)
             {
-                bool result = productVM.Brands.Any(c => c.Id == productVM.BrandId);
+                bool result = productVM.Brands.Any(b => b.Id == productVM.BrandId);
                 if (!result)
                 {
                     return View(productVM);
@@ -281,7 +281,7 @@ namespace AllupMVC.Areas.Admin.Controllers
 
             if (productVM.MainPhoto is not null)
             {
-                string fileName = await productVM.MainPhoto.CreateFileAsync(_env.WebRootPath, "assets", "images", "website-images");
+                string fileName = await productVM.MainPhoto.CreateFileAsync(_env.WebRootPath, "assets", "images");
 
 
                 ProductImage main = existed.ProductImages.FirstOrDefault(p => p.IsPrimary == true);
@@ -298,7 +298,7 @@ namespace AllupMVC.Areas.Admin.Controllers
 
             if (productVM.HoverPhoto is not null)
             {
-                string fileName = await productVM.HoverPhoto.CreateFileAsync(_env.WebRootPath, "assets", "images", "website-images");
+                string fileName = await productVM.HoverPhoto.CreateFileAsync(_env.WebRootPath, "assets", "images");
 
 
                 ProductImage hover = existed.ProductImages.FirstOrDefault(p => p.IsPrimary == false);
@@ -316,13 +316,13 @@ namespace AllupMVC.Areas.Admin.Controllers
 
 
 
-            if (productVM.ProductImages is null)
+            if (productVM.ImageIds is  null)
             {
                 productVM.ImageIds = new List<int>();
             }
 
             var deletedImages = existed.ProductImages.Where(pi => !productVM.ImageIds.Exists(imgId => imgId == pi.Id) && pi.IsPrimary == null).ToList();
-            deletedImages.ForEach(di => di.Image.DeleteFile(_env.WebRootPath, "assets", "images", "website-images"));
+            deletedImages.ForEach(di => di.Image.DeleteFile(_env.WebRootPath, "assets", "images"));
 
 
             _context.ProductImages.RemoveRange(deletedImages);
@@ -346,7 +346,7 @@ namespace AllupMVC.Areas.Admin.Controllers
 
                     existed.ProductImages.Add(new ProductImage
                     {
-                        Image = await file.CreateFileAsync(_env.WebRootPath, "assets", "images", "website-images"),
+                        Image = await file.CreateFileAsync(_env.WebRootPath, "assets", "images"),
                         CreatedAt = DateTime.Now,
                         IsDeleted = false,
                         IsPrimary = null
@@ -360,6 +360,7 @@ namespace AllupMVC.Areas.Admin.Controllers
             existed.SKU = productVM.SKU;
             existed.Price = productVM.Price.Value;
             existed.CategoryId = productVM.CategoryId.Value;
+            existed.BrandId = productVM.BrandId.Value;
             existed.Description = productVM.Description;
             existed.Name = productVM.Name;
 
