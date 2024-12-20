@@ -24,10 +24,10 @@ namespace AllupMVC.Controllers
                 .ToListAsync(),
 
                 NewProducts = await _context.Products
-                .Take(8)
                 .OrderByDescending(p=>p.CreatedAt)
+                .Take(8)
                 .Include(p => p.ProductImages
-                .Where(i => i.IsPrimary != null))
+                .Where(pi => pi.IsPrimary != null))
                 .ToListAsync()
             };
 

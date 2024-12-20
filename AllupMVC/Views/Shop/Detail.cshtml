@@ -27,7 +27,7 @@
                        @foreach(ProductImage productImage in Model.Product.ProductImages)
                         {
                             <div class="single-image">
-                                <img src="~/assets/images/@productImage.Image" alt="">
+                                <img style="width=200px;height=200px;" src="~/assets/images/@productImage.Image" alt="">
                             </div>
                         }
 
@@ -36,7 +36,7 @@
                         <ul class="product-single-thumb">
                            @foreach (ProductImage image in Model.Product.ProductImages)
                             {
-                                <li><img src="~/assets/images/@image.Image" alt="product"></li>
+                                <li><img style="width=200px;height=200px;" src="~/assets/images/@image.Image" alt="product"></li>
                               
                             }
                         </ul>

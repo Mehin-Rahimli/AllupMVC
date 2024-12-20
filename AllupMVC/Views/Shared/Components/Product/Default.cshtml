@@ -1,17 +1,17 @@
 ﻿@model List<Product>
 
-<div class="product-items">
+
     <div class="row product-active">
         @foreach (Product product in Model)
         {
             <div class="col-lg-2">
                 <div class="single-product mt-30">
                     <div class="product-image">
-                        <a asp-controller="shop" asp-action="detail" asp-route-id="@product.Id">
-                            <img class="first-image"
+                         <a asp-controller="shop" asp-action="detail" asp-route-id="@product.Id">
+                        <img style="width=200px;height=200px;" class="first-image"
                                  src="~/assets/images/@product.ProductImages.FirstOrDefault(pi=>pi.IsPrimary==true)?.Image"
                                  alt="product" />
-                            <img class="second-image"
+                        <img style="width=200px;height=200px;" class="second-image"
                                  src="~/assets/images/@product.ProductImages.FirstOrDefault(pi=>pi.IsPrimary==false)?.Image"
                                  alt="product" />
                         </a>
@@ -47,7 +47,7 @@
                             <li><i class="fas fa-star"></i></li>
                         </ul>
                         <h4 class="product-title">
-                            <a href="single-product.html">@product.Description</a>
+                            <a asp-controller="shop" asp-action="detail" asp-route-id="@product.Id">@product.Name</a>
                         </h4>
                         <div class="product-price">
                             <span class="price-sale">€@product.Price</span>
@@ -61,4 +61,4 @@
 
     </div>
     <!-- row -->
-</div>
+

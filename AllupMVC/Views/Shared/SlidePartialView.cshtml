@@ -1,0 +1,40 @@
+﻿@model List<Slide>
+<section class="slider-area slider-active">
+    @foreach (Slide slide in Model)
+    {
+        <a asp-controller="home" asp-action="index" asp-route-id="@slide.Id">
+            <div class="single-slider">
+                <div class="slider-image">
+                    <img src="~/assets/images/@slide.Image" alt="slider" />
+                </div>
+
+                <div class="slider-content-wrapper">
+                    <div class="container-fluid custom-container">
+                        <div class="slider-content">
+                            <h4 data-animation="fadeInDown"
+                                data-delay="0.5s"
+                                class="sub-title">
+                                @slide.SubTitle
+                            </h4>
+                            <h1 data-animation="fadeInLeft"
+                                data-delay="0.5s"
+                                class="main-title">
+                                @slide.Title
+                            </h1>
+                            <p data-animation="fadeInRightBig" data-delay="0.5s">
+                                @slide.Description
+                            </p>
+                            <a data-animation="zoomIn"
+                               data-delay="0.5s"
+                               class="main-btn"
+                               href="single-product.html">Shop Now</a>
+                        </div>
+                    </div>
+                    <!-- container -->
+                </div>
+            </div>
+        </a>
+    }
+    <!-- single slider -->
+    <!-- single slider -->
+</section>

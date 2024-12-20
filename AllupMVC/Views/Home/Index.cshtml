@@ -4,45 +4,7 @@
 
 <!--====== Slider Part Start ======-->
 
-<section class="slider-area slider-active">
-    @foreach (Slide slide in Model.Slides)
-    {
-        <a asp-controller="home" asp-action="index" asp-route-id="@slide.Id">
-            <div class="single-slider">
-                <div class="slider-image">
-                    <img src="~/assets/images/@slide.Image" alt="slider" />
-                </div>
-
-                <div class="slider-content-wrapper">
-                    <div class="container-fluid custom-container">
-                        <div class="slider-content">
-                            <h4 data-animation="fadeInDown"
-                                data-delay="0.5s"
-                                class="sub-title">
-                                @slide.SubTitle
-                            </h4>
-                            <h1 data-animation="fadeInLeft"
-                                data-delay="0.5s"
-                                class="main-title">
-                                @slide.Title
-                            </h1>
-                            <p data-animation="fadeInRightBig" data-delay="0.5s">
-                                @slide.Description
-                            </p>
-                            <a data-animation="zoomIn"
-                               data-delay="0.5s"
-                               class="main-btn"
-                               href="single-product.html">Shop Now</a>
-                        </div>
-                    </div>
-                    <!-- container -->
-                </div>
-            </div>
-        </a>
-    }
-    <!-- single slider -->
-    <!-- single slider -->
-</section>
+@Html.Partial("SlidePartialView",Model.Slides);
 
 <!--====== Slider Part Ends ======-->
 <!--====== Banner Part Start ======-->
@@ -50,23 +12,28 @@
 <div class="banner-area banner-bg">
     <div class="container-fluid custom-container">
         <div class="row">
-            @foreach (Slide slide in Model.Slides)
-            {
-                <div class="col-md-6">
-                    <div class="banner-image">
-                        <a href="shop-4-column.html">
-                            <img style="height:200px;width:200px;" src="~/assets/images/@slide.Image" alt="banner" />
-                        </a>
-                    </div>
-                    <!-- banner image -->
+            <div class="col-md-6">
+                <div class="banner-image">
+                    <a href="shop-4-column.html">
+                        <img style="width=200px;height=200px;" src="~/assets/images/banner-1.png" alt="banner" />
+                    </a>
                 </div>
-            }
-
+                <!-- banner image -->
+            </div>
+            <div class="col-md-6">
+                <div class="banner-image">
+                    <a href="shop-4-column.html">
+                        <img style="width=200px;height=200px;" src="~/assets/images/banner-2.png" alt="banner" />
+                    </a>
+                </div>
+                <!-- banner image -->
+            </div>
         </div>
         <!-- row -->
     </div>
     <!-- container -->
 </div>
+
 
 <!--====== Banner Part Ends ======-->
 <!--====== Category Part Start ======-->
@@ -79,28 +46,13 @@
                     <h2 class="title">Featured Categories</h2>
                 </div>
             </div>
+
+            @Html.Partial("ProductPartialView", Model.NewProducts);
         </div>
         <!-- row -->
-        @* <div class="row category-active"> *@
+      
         
-            
-            @Html.Partial("ProductPartialView",Model.NewProducts);
-
-@*  @foreach (Product product in Model.Products)
-            {
-                <div class="col-lg-2">
-                    <div class="single-category text-center">
-                        <a target="_blank" href="shop-left-sidebar.html">
-                            <img style="height:200px;width:200px;" src="~/assets/images/@product.ProductImages.FirstOrDefault(pi=>pi.IsPrimary!=null).Image" alt="category" />
-                            <p>@product.Category</p>
-                        </a>
-                    </div>
-
-                </div>
-
-            } *@
-
-        @* </div> *@
+           
         <!-- row -->
     </div>
     <!-- container -->
@@ -130,7 +82,7 @@
                                href="#bestseller"
                                role="tab"
                                aria-controls="bestseller"
-                               aria-selected="false">Bestseller</a>
+                               aria-selected="false">Premium</a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a id="featured-tab"
@@ -151,21 +103,27 @@
                  id="new"
                  role="tabpanel"
                  aria-labelledby="new-tab">
-                @await Component.InvokeAsync("Product")
+               
+                    @await Component.InvokeAsync("Product", SortType.Date)
+              
                 <!-- product items -->
             </div>
             <div class="tab-pane fade"
                  id="bestseller"
                  role="tabpanel"
                  aria-labelledby="bestseller-tab">
-                @await Component.InvokeAsync("Product")
+               
+                 @await Component.InvokeAsync("Product",SortType.Price)
+             
                 <!-- product items -->
             </div>
             <div class="tab-pane fade"
                  id="featured"
                  role="tabpanel"
                  aria-labelledby="featured-tab">
-                @await Component.InvokeAsync("Product")
+                
+                    @await Component.InvokeAsync("Product", SortType.Name)
+         
                 <!-- product items -->
             </div>
         </div>
@@ -424,7 +382,7 @@
                  role="tabpanel"
                  aria-labelledby="computer-tab">
                 <div class="product-items">
-                    <div class="row product-active-2">
+                    @* <div class="row product-active-2">
                      @foreach (Product product in Model.Products)
                         {
                             <div class="col-lg-4">
@@ -484,7 +442,7 @@
                             </div>
                         }
                        
-                    </div>
+                    </div> *@
                     <!-- row -->
                 </div>
                 <!-- product items -->
@@ -494,7 +452,7 @@
                  role="tabpanel"
                  aria-labelledby="smartphone-tab">
                 <div class="product-items">
-                    <div class="row product-active-2">
+                   @*  <div class="row product-active-2">
                        @foreach (Product product in Model.Products)
                         {
                             <div class="col-lg-4">
@@ -554,7 +512,7 @@
                             </div>
                         }
                       
-                    </div>
+                    </div> *@
                     <!-- row -->
                 </div>
                 <!-- product items -->
@@ -564,7 +522,7 @@
                  role="tabpanel"
                  aria-labelledby="game-tab">
                 <div class="product-items">
-                    <div class="row product-active-2">
+                   @*  <div class="row product-active-2">
                        @foreach (Product product in Model.Products)
                         {
                             <div class="col-lg-4">
@@ -624,7 +582,7 @@
                             </div>
 
                         }
-                    </div>
+                    </div> *@
                     <!-- row -->
                 </div>
                 <!-- product items -->
