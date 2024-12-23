@@ -9,10 +9,12 @@
                 <div class="single-product mt-30">
                     <div class="product-image">
                         <a asp-controller="shop" asp-action="detail" asp-route-id="@product.Id">
-                            <img style="width=20px;height=20px;" class="first-image" src="~/assets/images/@product.ProductImages.FirstOrDefault(pi=>pi.IsPrimary==true)?.Image" alt="product">
+                            <img  class="first-image" src="~/assets/images/@product.ProductImages.FirstOrDefault(pi=>pi.IsPrimary==true)?.Image" alt="product">
                         </a>
                         <ul class="product-meta">
-                            <li><a href="#"><i class="icon ion-bag"></i></a></li>
+                            <li><a class="cus-add-basket" asp-action="addBasket" asp-controller="basket" asp-route-id="@product.Id">>
+                                <i class="icon ion-bag"></i>
+                                </a></li>
                             <li><a href="#"><i class="icon ion-android-favorite-outline"></i></a></li>
                             <li><a href="#"><i class="icon ion-android-options"></i></a></li>
                             <li><a data-toggle="modal" data-target="#productQuickModal" href="#"><i class="icon ion-android-open"></i></a></li>

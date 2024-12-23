@@ -1,8 +1,10 @@
 ﻿@using AllupMVC.Services.Interfaces
 
 @inject ILayoutService _LayoutService;
+@inject IBasketService _basketService;
 @{
     Dictionary<string,string>settings=await _LayoutService.GetSettingsAsync();
+    List<BasketItemVM> basketItems = await _basketService.GetBasketAsync();
 
 }
 

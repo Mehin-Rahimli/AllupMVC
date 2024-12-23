@@ -1,6 +1,10 @@
-﻿namespace AllupMVC.Services.Interfaces
+﻿using AllupMVC.Models;
+using AllupMVC.ViewModels;
+
+namespace AllupMVC.Services.Interfaces
 {
-    public class IBasketService
+    public interface IBasketService
     {
+       Task<List<BasketItemVM>>GetBasketAsync();
     }
 }

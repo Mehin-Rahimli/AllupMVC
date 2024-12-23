@@ -1,11 +1,12 @@
 ﻿
 @model Dictionary<string,string>
 @using AllupMVC.Services.Interfaces
-@inject ILayoutService _LayoutService
+@inject ILayoutService _LayoutService;
+@inject IBasketService _basketService;
 
 @{
     Dictionary<string,string> settings=await _LayoutService.GetSettingsAsync();
-   
+    List<BasketItemVM> basketItems = await _basketService.GetBasketAsync();
 }
 <!--====== Header Part Start ======-->
 
@@ -40,9 +41,25 @@
 
                                     <ul class="dropdown-menu" aria-labelledby="setting">
 
-                                        <li><a href="my-account.html">My account</a></li>
-                                        <li><a href="checkout.html">Checkout</a></li>
-                                        <li><a href="login.html">Sign in</a></li>
+                                        @if (User.Identity.IsAuthenticated)
+                                        {
+                                            <li>
+                                                <a class="dropdown-item" href="my-account.html">@User.Identity.Name</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" asp-action="Logout" asp-controller="account">Log Out</a>
+                                            </li>
+                                        }
+
+                                        else
+                                        {
+                                            <li>
+                                                <a class="dropdown-item" asp-action="register" asp-controller="account">Register</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" asp-action="login" asp-controller="account" asp-route-returnurl="@Context.Request.Path.Value">Login</a>
+                                            </li>
+                                        }
 
                                     </ul>
                                 </div>

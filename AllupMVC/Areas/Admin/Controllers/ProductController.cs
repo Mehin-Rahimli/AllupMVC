@@ -368,6 +368,30 @@ namespace AllupMVC.Areas.Admin.Controllers
             return RedirectToAction(nameof(Index));
 
         }
+
+       
+        public async Task<IActionResult> Delete(int? id)
+        {
+            
+            if (id == null || id < 1) return BadRequest();
+
+            var product = await _context.Products
+                .Include(p => p.ProductImages)
+                .FirstOrDefaultAsync(p => p.Id == id);
+
+            if (product == null) return NotFound();
+            foreach (var image in product.ProductImages)
+            {
+                image.Image.DeleteFile(_env.WebRootPath, "assets", "images");
+            }
+            _context.ProductImages.RemoveRange(product.ProductImages);
+
+            _context.Products.Remove(product);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
+        }
+
     }
 }
 

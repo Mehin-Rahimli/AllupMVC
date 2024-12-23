@@ -8,16 +8,18 @@
                 <div class="single-product mt-30">
                     <div class="product-image">
                          <a asp-controller="shop" asp-action="detail" asp-route-id="@product.Id">
-                        <img style="width=200px;height=200px;" class="first-image"
+                        <img  class="first-image"
                                  src="~/assets/images/@product.ProductImages.FirstOrDefault(pi=>pi.IsPrimary==true)?.Image"
                                  alt="product" />
-                        <img style="width=200px;height=200px;" class="second-image"
+                        <img  class="second-image"
                                  src="~/assets/images/@product.ProductImages.FirstOrDefault(pi=>pi.IsPrimary==false)?.Image"
                                  alt="product" />
                         </a>
                         <ul class="product-meta">
                             <li>
-                                <a href="#"><i class="icon ion-bag"></i></a>
+                            <a class="cus-add-basket" asp-action="addBasket" asp-controller="basket" asp-route-id="@product.Id">
+                                <i class="icon ion-bag"></i>
+                                </a>
                             </li>
                             <li>
                                 <a href="#">

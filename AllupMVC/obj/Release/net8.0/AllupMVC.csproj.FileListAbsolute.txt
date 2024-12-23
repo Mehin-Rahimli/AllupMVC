@@ -256,3 +256,8 @@ C:\Users\User\OneDrive\Desktop\Documents\Thirdproject\AllupMVC\AllupMVC\obj\Rele
 C:\Users\User\OneDrive\Desktop\Documents\Thirdproject\AllupMVC\AllupMVC\obj\Release\net8.0\AllupMVC.pdb
 C:\Users\User\OneDrive\Desktop\Documents\Thirdproject\AllupMVC\AllupMVC\obj\Release\net8.0\AllupMVC.genruntimeconfig.cache
 C:\Users\User\OneDrive\Desktop\Documents\Thirdproject\AllupMVC\AllupMVC\obj\Release\net8.0\ref\AllupMVC.dll
+C:\Users\User\OneDrive\Desktop\Documents\Thirdproject\AllupMVC\AllupMVC\bin\Release\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\User\OneDrive\Desktop\Documents\Thirdproject\AllupMVC\AllupMVC\bin\Release\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\User\OneDrive\Desktop\Documents\Thirdproject\AllupMVC\AllupMVC\bin\Release\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\User\OneDrive\Desktop\Documents\Thirdproject\AllupMVC\AllupMVC\bin\Release\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\User\OneDrive\Desktop\Documents\Thirdproject\AllupMVC\AllupMVC\bin\Release\net8.0\Microsoft.Extensions.Identity.Stores.dll
