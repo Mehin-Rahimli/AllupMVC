@@ -1,202 +1,253 @@
-﻿    <!--====== Breadcrumb Part Start ======-->
+﻿@model OrderVM
+@{
+    decimal total = 0;
+}
+
+<!--====== Breadcrumb Part Start ======-->
 
 <div class="breadcrumb-area">
     <div class="container-fluid custom-container">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active">Cart</li>
+                <li class="breadcrumb-item active">Checkout</li>
             </ol>
         </nav>
     </div> <!-- container -->
 </div>
 
 <!--====== Breadcrumb Part Ends ======-->
-<!--====== Cart Part Start ======-->
+<!--====== Checkout Part Start ======-->
 
-<section class="cart-page pt-10">
+<section class="checkout-area pt-10">
     <div class="container-fluid custom-container">
         <div class="row">
-            <div class="col-xl-8">
-                <div class="shopping-cart mt-25">
-                    <h4 class="allup-title">Shopping Cart</h4>
-
-                    <div class="shopping-cart-table table-responsive">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th class="image">Image</th>
-                                    <th class="product">Product</th>
-                                    <th class="price">Price</th>
-                                    <th class="quantity">Quantity</th>
-                                    <th class="total">Total</th>
-                                    <th class="delete">Delete</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="product-image">
-                                            <img src="~/assets/images/product-cart/cart-1.jpg" alt="cart">
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="product-title">
-                                            <h4 class="title"><a href="single-product.html">New Balance Fresh Foam LAZR v1 Sport eu accumsan massa facilisis</a></h4>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="product-price">
-                                            <span class="price">€18.90</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="product-quantity">
-                                            <div class="quantity mt-15 d-flex">
-                                                <button type="button" class="sub"><i class="fal fa-minus"></i></button>
-                                                <input type="text" value="1" />
-                                                <button type="button" class="add"><i class="fal fa-plus"></i></button>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="product-total">
-                                            <span class="total-amount">€18.90</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="product-delete">
-                                            <a href="#"><i class="fal fa-trash-alt"></i></a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="product-image">
-                                            <img src="~/assets/images/product-cart/cart-2.jpg" alt="cart">
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="product-title">
-                                            <h4 class="title"><a href="single-product.html">New Balance Fresh Foam LAZR v1 Sport eu accumsan massa facilisis</a></h4>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="product-price">
-                                            <span class="price">€18.90</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="product-quantity">
-                                            <div class="quantity mt-15 d-flex">
-                                                <button type="button" class="sub"><i class="fal fa-minus"></i></button>
-                                                <input type="text" value="1" />
-                                                <button type="button" class="add"><i class="fal fa-plus"></i></button>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="product-total">
-                                            <span class="total-amount">€18.90</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="product-delete">
-                                            <a href="#"><i class="fal fa-trash-alt"></i></a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="product-image">
-                                            <img src="~/assets/images/product-cart/cart-1.jpg" alt="cart">
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="product-title">
-                                            <h4 class="title"><a href="single-product.html">New Balance Fresh Foam LAZR v1 Sport eu accumsan massa facilisis</a></h4>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="product-price">
-                                            <span class="price">€18.90</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="product-quantity">
-                                            <div class="quantity mt-15 d-flex">
-                                                <button type="button" class="sub"><i class="fal fa-minus"></i></button>
-                                                <input type="text" value="1" />
-                                                <button type="button" class="add"><i class="fal fa-plus"></i></button>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="product-total">
-                                            <span class="total-amount">€18.90</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="product-delete">
-                                            <a href="#"><i class="fal fa-trash-alt"></i></a>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="cart-btn text-right">
-                        <a class="main-btn" href="#">Update cart</a>
-                    </div>
+            <div class="col-xl-8 col-lg-7">
+                <div class="checkout-form">
+                    <form action="#">
+                        <div class="billing-address mt-30">
+                            <h4 class="allup-title">Billing Address</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                               
+                                <div class="col-md-12">
+                                    <div class="single-form">
+                                            <label asp-for="Address">Address<span class="required">*</span></label>
+                                            <input asp-for="Address" type="text" placeholder="Address"/>
+                                            <span class="text-danger" asp-validation-for="Address"></span>
+                                    </div>
+                                </div>
+                               
+                              
+                            </div>
+                        </div>
+                        <div class="checkout-checkbox">
+                            <ul>
+                                <li>
+                                    <div class="custom-checkbox">
+                                        <input type="checkbox" id="account">
+                                        <label for="account"></label>
+                                        <p>Create an Account? </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-checkbox">
+                                        <input type="checkbox" id="address" data-shipping>
+                                        <label for="address"></label>
+                                        <p>Ship to Different Address </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="shipping-address" class="shipping-address mt-30">
+                            <h4 class="allup-title">Shipping Address</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="single-form">
+                                        <label>First Name*</label>
+                                        <input type="text" placeholder="First Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="single-form">
+                                        <label>Last  Name*</label>
+                                        <input type="text" placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="single-form">
+                                        <label>Email Address*</label>
+                                        <input type="text" placeholder="Email Address">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="single-form">
+                                        <label>Phone no*</label>
+                                        <input type="text" placeholder="Phone no">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="single-form">
+                                        <label>Company Name</label>
+                                        <input type="text" placeholder="Company Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="single-form">
+                                        <label>Address</label>
+                                        <input type="text" placeholder="Address Line 1">
+                                        <input type="text" placeholder="Address Line 2">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="single-form">
+                                        <label>Country</label>
+                                        <select>
+                                            <option value="">Bangedesh</option>
+                                            <option value="">India</option>
+                                            <option value="">Pakistan</option>
+                                            <option value="">Nepal</option>
+                                            <option value="">China</option>
+                                            <option value="">Japan</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="single-form">
+                                        <label>Town/City*</label>
+                                        <input type="text" placeholder="Town/City">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="single-form">
+                                        <label>State*</label>
+                                        <input type="text" placeholder="State">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="single-form">
+                                        <label>Zip Code*</label>
+                                        <input type="text" placeholder="Zip Code">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <div class="col-xl-4">
-                <div class="row">
-                    <div class="col-xl-12 col-md-6">
-                        <div class="cart-coupon mt-30">
-                            <h5 class="title">Discount Coupon Code</h5>
-                            <form action="#">
-                                <div class="single-form coupon-form d-flex flex-wrap">
-                                    <input type="text" placeholder="Coupon Code">
-                                    <button class="main-btn">Apply Coupon</button>
-                                </div>
-                            </form>
-                        </div>
+            <div class="col-xl-4 col-lg-5">
+                <div class="checkout-total-wrapper mt-30">
+                    <h4 class="allup-title">Cart Total</h4>
+                    <div class="checkout-total mt-30">
+                        <h4 class="title">Product  <span>Total</span></h4>
+                        @foreach(BasketInOrderVM itemVM in Model.BasketInOrderVMs)
+                        {
+                            total += itemVM.Subtotal;
+                            <ul>
+
+                                <li>
+                                    <p class="total-value">@itemVM.Name X @itemVM.Count/p>
+                                    <p class="total-amount">€10.00</p>
+                                </li>
+                            </ul>
+                            <div class="checkout-total-sub">
+                                <p class="total-value">Sub Total</p>
+                                <p class="total-amount">€@itemVM.Subtotal</p>
+                            </div>
+                            <div class="checkout-total-sub">
+                                <p class="total-value">Shipping Fee </p>
+                                <p class="total-amount">€00.00</p>
+                            </div>
+                           
+                        }
+                        <h4 class="title mt-15">Product  <span>€@total</span></h4>
                     </div>
-                    <div class="col-xl-12 col-md-6">
-                        <div class="cart-total mt-30">
-                            <div class="sub-total">
-                                <div class="single-total">
-                                    <span class="cart-value">Subtotal</span>
-                                    <span class="cart-amount">€18.90</span>
+                </div>
+
+                <div class="checkout-payment-wrapper mt-30">
+                    <h4 class="allup-title">Payment Method</h4>
+                    <div class="checkout-payment mt-30">
+                        <ul>
+                            <li>
+                                <div class="single-payment">
+                                    <div class="payment-radio">
+                                        <input type="radio" name="radio" id="check" checked="checked">
+                                        <label for="check"><span></span> Check Payment</label>
+
+                                        <div class="payment-details">
+                                            <p>Please send a Check to Store name with Store Street, Store Town, Store State, Store Postcode, Store Country.</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="single-total">
-                                    <span class="cart-value">Shipping Cost</span>
-                                    <span class="cart-amount">€3.90</span>
+                            </li>
+                            <li>
+                                <div class="single-payment">
+                                    <div class="payment-radio">
+                                        <input type="radio" name="radio" id="bank">
+                                        <label for="bank"><span></span> Direct Bank Transfer</label>
+
+                                        <div class="payment-details">
+                                            <p>Please send a Check to Store name with Store Street, Store Town, Store State, Store Postcode, Store Country.</p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="total">
-                                <div class="single-total">
-                                    <span class="cart-value">Total (tax excl.)</span>
-                                    <span class="cart-amount">€22.80</span>
+                            </li>
+                            <li>
+                                <div class="single-payment">
+                                    <div class="payment-radio">
+                                        <input type="radio" name="radio" id="cash">
+                                        <label for="cash"><span></span> Cash on Delivery</label>
+
+                                        <div class="payment-details">
+                                            <p>Please send a Check to Store name with Store Street, Store Town, Store State, Store Postcode, Store Country.</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="single-total">
-                                    <span class="cart-value">Taxes</span>
-                                    <span class="cart-amount">€0.00</span>
+                            </li>
+                            <li>
+                                <div class="single-payment">
+                                    <div class="payment-radio">
+                                        <input type="radio" name="radio" id="paypal">
+                                        <label for="paypal"><span></span> Paypal</label>
+
+                                        <div class="payment-details">
+                                            <p>Please send a Check to Store name with Store Street, Store Town, Store State, Store Postcode, Store Country.</p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="cart-total-btn text-right">
-                                <a class="main-btn" href="#">Proceed to Checkout</a>
-                            </div>
-                        </div>
+                            </li>
+                            <li>
+                                <div class="single-payment">
+                                    <div class="payment-radio">
+                                        <input type="radio" name="radio" id="payoneer">
+                                        <label for="payoneer"><span></span> Payoneer</label>
+
+                                        <div class="payment-details">
+                                            <p>Please send a Check to Store name with Store Street, Store Town, Store State, Store Postcode, Store Country.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="accept">
+                                    <label for="accept"></label>
+                                    <p>I’ve read and accept the terms & conditions</p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
+                </div>
+
+                <div class="checkout-btn">
+                    <a class="main-btn main-btn-2" href="#">Place Order</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!--====== Cart Part Ends ======-->
+<!--====== Checkout Part Ends ======-->
 <!--====== Brand Part Start ======-->
 
 <div class="brand-area pt-80">
